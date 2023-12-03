@@ -1,0 +1,50 @@
+/* src/components/Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #131313;
+}
+
+h2 {
+    font-size: 24px; /* Increase heading font size */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+input {
+    padding: 5px; /* Increase input padding for more height */
+    font-size: 16px; /* Increase input font size */
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 90px;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 24px; /* Increase button padding for more height */
+    font-size: 13px; /* Increase button font size */
+    background-color: rgba(17, 15, 15, 0.88);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+
+
+}
+
+button:hover {
+    background-color: rgba(20, 22, 24, 0.66);
+}
