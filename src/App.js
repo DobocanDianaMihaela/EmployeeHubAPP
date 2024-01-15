@@ -11,12 +11,12 @@ const App = () => {
     const [loggedInUser, setLoggedInUser] = useState(null);
 
     const handleLogin = (username) => {
-        // You can perform authentication here, and set the logged-in user
+
         setLoggedInUser(username);
     };
 
     const handleLogout = () => {
-        // Perform logout logic, e.g., clear user from state
+
         setLoggedInUser(null);
     };
 
@@ -29,7 +29,7 @@ const App = () => {
 
                 <div className="main-container">
                     {loggedInUser ? (
-                        // Render the authenticated content
+
                         <>
                             <nav>
                                 <ul>
@@ -52,7 +52,7 @@ const App = () => {
                             </div>
                         </>
                     ) : (
-                        // Render the login component if not authenticated
+
                         <Login onLogin={handleLogin} />
                     )}
                 </div>

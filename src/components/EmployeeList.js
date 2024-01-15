@@ -121,21 +121,15 @@ const EmployeeList = () => {
 
     const handleSendEmailClick = () => {
         if (selectedPersons.length > 0) {
-            // Deschide formularul EmailForm cu angajații selectați
-            // Pasează prop-ul onClose pentru a gestiona închiderea formularului
+
             setIsEmailFormOpen(true);
         } else {
             console.warn('No persons selected for email');
         }
     };
     const handleSendEmail = (subject, message) => {
-        // Implementează aici logica pentru a trimite e-mailurile
-        // Folosește subiectul și mesajul așa cum este necesar
         console.log('Subject:', subject);
         console.log('Message:', message);
-        /* setSelectedPersons((prevSelected) => prevSelected.filter((employee) => !selectedPersons.includes(employee)));*/
-        // Aici poți adăuga logica pentru a trimite efectiv e-mailul
-        // Poți utiliza o librărie pentru gestionarea trimiterii de e-mailuri sau o altă metodă corespunzătoare
     };
     const resetSelectedPersons = () => {
         setSelectedPersons([]);
@@ -246,7 +240,7 @@ const EmployeeList = () => {
                     <Typography>ID: {selectedEmployee?.id}</Typography>
                     <Typography>Manager ID: {selectedEmployee?.managerID}</Typography>
                     <Typography>Email: {selectedEmployee?.email}</Typography>
-                    {/* Add more details about the employee here */}
+
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleInfoDialogClose}>Close</Button>

@@ -9,7 +9,7 @@
 }
 
 h2 {
-    font-size: 24px; /* Increase heading font size */
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -26,8 +26,8 @@ label {
 }
 
 input {
-    padding: 5px; /* Increase input padding for more height */
-    font-size: 16px; /* Increase input font size */
+    padding: 5px;
+    font-size: 16px;
     margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 90px;
@@ -35,8 +35,8 @@ input {
 
 button {
     cursor: pointer;
-    padding: 12px 24px; /* Increase button padding for more height */
-    font-size: 13px; /* Increase button font size */
+    padding: 12px 24px;
+    font-size: 13px;
     background-color: rgba(17, 15, 15, 0.88);
     color: #fff;
     border: none;

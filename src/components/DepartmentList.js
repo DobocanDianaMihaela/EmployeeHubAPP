@@ -194,7 +194,7 @@ const DepartmentList = () => {
             ))}
 
             <Dialog open={isDialogOpen} onClose={handleDialogClose}>
-                {/* Cod existent pentru dialogul de ștergere */}
+
                 <DialogTitle>Delete Department</DialogTitle>
                 <DialogContent>
                     <Typography>Are you sure you want to delete the department?</Typography>
@@ -209,7 +209,7 @@ const DepartmentList = () => {
             </Dialog>
 
             <Dialog open={isAddDialogOpen} onClose={handleAddDialogClose}>
-                {/* Cod existent pentru dialogul de adăugare */}
+
                 <DialogTitle>Add Department</DialogTitle>
                 <DialogContent>
                     <TextField
@@ -245,13 +245,13 @@ const DepartmentList = () => {
                     <Typography>Department ID: {selectedDepartment?.departmentID}</Typography>
                     <Typography>Parent ID: {selectedDepartment?.parentID}</Typography>
                     <Typography>Manager ID: {selectedDepartment?.managerID}</Typography>
-                    {/* Adaugă mai multe detalii despre departament aici */}
+
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleInfoDialogClose}>Close</Button>
                 </DialogActions>
             </Dialog>
-            {/* Managers Dialog */}
+
             <Dialog open={isManagersDialogOpen} onClose={closeManagersDialog}>
                 <DialogTitle>Managers in Department</DialogTitle>
                 <DialogContent>
@@ -268,7 +268,7 @@ const DepartmentList = () => {
                 </DialogActions>
             </Dialog>
 
-            {/* Employees Dialog */}
+
             <Dialog open={isEmployeesDialogOpen} onClose={closeEmployeesDialog}>
                 <DialogTitle>Employees in Department</DialogTitle>
                 <DialogContent>
